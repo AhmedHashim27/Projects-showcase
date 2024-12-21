@@ -1,3 +1,8 @@
+
+import Header from "../components/layout/Header";
+import Footer from "../components/layout/Footer";
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./style/globals.css";
 
 export const metadata = {
@@ -7,9 +12,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en"> 
       <body>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
