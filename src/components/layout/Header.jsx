@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Image from "next/image";
+import Button from "react-bootstrap/Button";
+import Link from "next/link";
 export default function Header() {
   return (
     <section className="header">
@@ -41,6 +43,18 @@ export default function Header() {
               <h1 className="text-uppercase text-center">
                 professional <br /> frontend developer
               </h1>
+              <p className="text-center text-uppercase my-4">
+                Hi, I’m ahmed, A creative Frontend Developer passionate about crafting intuitive and engaging user interfaces.
+              </p>
+            </div>
+            <div className="hero-button my-4  ">
+              <Link href={"/contact"}>
+              <span></span>
+              <Button className="text-uppercase fw-bold" variant="primary">
+                get in touch
+              </Button>
+              </Link>
+            
             </div>
           </div>
         </Container>

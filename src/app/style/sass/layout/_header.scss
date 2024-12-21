@@ -30,10 +30,8 @@
   }
 
   .hero {
-   
     .hero-content {
-      height: 80vh;
-   
+      height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -46,15 +44,58 @@
           top: -80px;
           right: 20%;
           z-index: 1;
-        
+          object-fit: cover;
         }
       }
-      h1{
-        padding: 10px 0;
-        font-size: 100px;
+      .hero-text {
+        h1 {
+          padding: 10px 0;
+          font-size: 100px;
+          position: relative;
+          z-index: 2;
+        }
+        p {
+          letter-spacing: 5px;
+          line-height: 1.9;
+        }
+      }
+      .hero-button {
         position: relative;
-        z-index: 2;
-        
+        transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        &:hover {
+          span {
+            width: 100%;
+          }
+        }
+
+        span {
+          position: absolute;
+          width: 0;
+          height: 100%;
+          background: #ff9409;
+          border-radius: 2px;
+          z-index: 1 !important;
+          transition: width 3s ease-in-out;
+          //أضفانتقالًالتأثيرالملء:;
+          -webkit-transition: width 1s ease-in-out;
+          -moz-transition: width 1s ease-in-out;
+          -ms-transition: width 1s ease-in-out;
+          -o-transition: width 1s ease-in-out;
+        }
+
+        .btn-primary {
+          position: relative;
+          z-index: 2;
+          background-color: transparent;
+          border-color: $themeColor;
+          color: #fff;
+          padding: 20px 34px;
+          border-radius: 2px;
+        }
       }
     }
   }

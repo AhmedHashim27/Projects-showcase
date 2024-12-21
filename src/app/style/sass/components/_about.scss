@@ -1,0 +1,93 @@
+.about {
+  padding: 100px 0;
+  .about-img {
+    position: relative;
+    width: 100%;
+    height: 500px;
+
+    img {
+      object-fit: cover;
+      width: 58% !important;
+      margin-bottom: 15px;
+      margin: auto;
+      box-shadow: 0 0 10px #222;
+      border-radius: 15px;
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      -ms-border-radius: 15px;
+      -o-border-radius: 15px;
+      animation: aboutanimation 3s ease-in-out infinite alternate;
+      -webkit-animation: aboutanimation 3s ease-in-out infinite alternate;
+    }
+    @keyframes aboutanimation {
+      from {
+        transform: translateY(-20px);
+        -webkit-transform: translateY(-20px);
+        -moz-transform: translateY(-20px);
+        -ms-transform: translateY(-20px);
+        -o-transform: translateY(-20px);
+      }
+      to {
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+      }
+    }
+  }
+
+  .about-info {
+    h2 {
+      letter-spacing: 5px;
+      line-height: 1.9;
+      width: 92%;
+      margin: auto;
+    }
+    p {
+      letter-spacing: 5px;
+      line-height: 2;
+      font-size: 19px;
+      font-weight: 700;
+      color: #ccc;
+      width: 92%;
+      margin: auto;
+    }
+  }
+
+  .skills {
+    .slider-container {
+      .skills-container {
+        border: 1px solid #222;
+        width: 75% !important;
+        margin: auto;
+        border-radius: 3px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+      }
+      .slider-item {
+        position: relative;
+        margin: auto;
+        height: 100px;
+        cursor: pointer;
+
+        img {
+          padding: 10px;
+          object-fit: contain;
+
+          margin-top: 10px;
+        }
+      }
+      .skill-name {
+        h6 {
+          margin-top: 10px;
+          letter-spacing: 3px;
+          line-height: 1.9;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
