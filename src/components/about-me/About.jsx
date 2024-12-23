@@ -58,7 +58,7 @@ export default function About() {
   }, []);
 
   return (
-    <section className="about">
+    <section className="about" id="about">
       {about.map((item, index) => (
         <Container fluid key={index}>
           <Row>

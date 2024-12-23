@@ -43,7 +43,7 @@ export default function Projects() {
   }, []); //
 
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <Container>
         <div className="navigation text-uppercase mb-5">
           <div className="navigation text-uppercase mb-5">
@@ -65,7 +65,13 @@ export default function Projects() {
           {filteredProjects.map((project, index) => (
             <div key={index} className={`box${index + 1}`}>
               <div className="head-image">
-                <Image src={project.image} alt={project.name} fill />
+                <Image
+                  src={project.image}
+                  alt={project.name}
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
                 <div className="project-details text-center">
                   <div className="desc">
                     <h4 className="text-uppercase">{project.name}</h4>

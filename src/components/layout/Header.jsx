@@ -9,6 +9,13 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Header() {
+  const [activeItem, setActiveItem] = useState("about");
+
+  // تعديل دالة handleItemClick لتعيين activeItem بشكل صحيح
+  const handleItemClick = (item) => {
+    setActiveItem(item);
+  };
+
   const [hero, setHero] = useState([]);
   const fetchProjects = () => {
     axios
@@ -26,34 +33,37 @@ export default function Header() {
 
     const intervalId = setInterval(() => {
       fetchProjects();
-    }, 1000); //
+    }, 1000);
 
     return () => clearInterval(intervalId);
-  }, []); //
+  }, []);
 
   return (
     <section className="header">
       <div className="menu">
-        <Navbar expand="lg" className="bg-body-tertiary py-4">
+        <Navbar expand="lg" className="py-4">
           <Container>
             <Navbar.Brand href="#home" className="text-capitalize fw-bold">
               <span> dev</span> ahmed
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle
+              aria-controls="basic-navbar-nav"
+              style={{ backgroundColor: "#fff" }}
+            />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto text-uppercase">
-                <Nav.Link as={Link} href="#home">
-                  Home
-                </Nav.Link>
-                <Nav.Link as={Link} href="#link">
-                  About
-                </Nav.Link>
-                <Nav.Link as={Link} href="#projects">
-                  Projects
-                </Nav.Link>
-                <Nav.Link as={Link} href="#contact">
-                  Contact
-                </Nav.Link>
+                {[ "about", "projects", "contact"].map((item, index) => (
+                  <Nav.Item key={index}>
+                    <Nav.Link
+                      as={Link}
+                      href={`#${item}`}
+                      className={activeItem === item ? "active" : ""}
+                      onClick={() => handleItemClick(item)} // عند النقر، يتم تعيين activeItem
+                    >
+                      {item.charAt(0).toUpperCase() + item.slice(1)}
+                    </Nav.Link>
+                  </Nav.Item>
+                ))}
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -71,10 +81,13 @@ export default function Header() {
                   alt={item.name}
                   width={150}
                   height={150}
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
               <div className="hero-text">
-                <h1 className="text-uppercase text-center">{item.name}</h1>
+                <h1 className="text-uppercase text-center">
+                  {item.name} <br /> {item.title}
+                </h1>
                 <p className="text-center text-uppercase my-4">{item.hint}</p>
               </div>
               <div className="hero-button my-4">

@@ -32,16 +32,22 @@ a {
   background-position: center;
   height: 100vh;
 }
-.header .menu .navbar-brand {
-  color: #fff;
-  font-size: 30px;
-}
-.header .menu .navbar-brand span {
-  color: #FF9409;
-}
 .header .menu .navbar {
   background-color: transparent !important;
   font-size: 20px;
+}
+.header .menu .navbar .navbar-toggler-icon {
+  border: 1px solid #fff !important;
+}
+.header .menu .navbar .navbar-brand {
+  color: #fff;
+  font-size: 30px;
+}
+.header .menu .navbar .navbar-brand span {
+  color: #FF9409;
+}
+.header .menu .navbar .navbar-nav .active {
+  color: #FF9409 !important;
 }
 .header .menu .navbar .navbar-nav a {
   color: #fff !important;
@@ -67,7 +73,7 @@ a {
 }
 .header .hero .hero-content .hero-image img {
   position: absolute;
-  top: -80px;
+  top: -70px;
   right: 20%;
   z-index: 1;
   -o-object-fit: cover;
@@ -192,6 +198,9 @@ a {
   text-transform: uppercase;
 }
 
+.projects {
+  padding: 50px 0;
+}
 .projects .navigation ul .active {
   border-bottom: 1px solid #FF9409;
   color: #FF9409;

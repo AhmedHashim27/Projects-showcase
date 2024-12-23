@@ -5,18 +5,24 @@
   background-position: center;
   height: 100vh;
   .menu {
-    .navbar-brand {
-      color: #fff;
-      font-size: 30px;
-      span {
-        color: $themeColor;
-      }
-    }
-
     .navbar {
+      .navbar-toggler-icon {
+        border: 1px solid #fff !important;
+      }
       background-color: transparent !important;
       font-size: 20px;
+
+      .navbar-brand {
+        color: #fff;
+        font-size: 30px;
+        span {
+          color: $themeColor;
+        }
+      }
       .navbar-nav {
+        .active {
+          color: $themeColor !important;
+        }
         a {
           color: #fff !important;
           @include transitions;
@@ -41,7 +47,7 @@
         width: 100%;
         img {
           position: absolute;
-          top: -80px;
+          top: -70px;
           right: 20%;
           z-index: 1;
           object-fit: cover;
