@@ -80,15 +80,25 @@ export default function Projects() {
                       <ul className="list-unstyled d-flex justify-content-center align-items-center gap-3">
                         <li>
                           {project.github && (
-                            <Link href={project.github}>
-                              <FontAwesomeIcon icon={faGithubAlt} />
-                            </Link>
+                            <div className="links-container">
+                              <Link href={project.github}>
+                                <FontAwesomeIcon
+                                  icon={faGithubAlt}
+                                  className="fa-icon"
+                                />
+                                <span>GitHub</span>
+                              </Link>
+                            </div>
                           )}
                         </li>
                         <li>
                           {project.vercel && (
                             <Link href={project.vercel}>
-                              <FontAwesomeIcon icon={faLink} />
+                              <FontAwesomeIcon
+                                icon={faLink}
+                                className="fa-icon"
+                              />
+                              <span>Visit Site</span>
                             </Link>
                           )}
                         </li>

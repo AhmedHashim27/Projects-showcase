@@ -20,6 +20,11 @@ body {
   background: linear-gradient(to bottom, #FF9409, #222);
 }
 
+a {
+  text-decoration: none;
+  color: #fff !important;
+}
+
 .header {
   background-image: url("/assets/images/header/hero-bg.jpg");
   background-repeat: no-repeat;
@@ -287,6 +292,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box2 {
   grid-area: box2;
   height: 200px;
@@ -359,6 +375,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 .projects .projects-filter .box3 {
   grid-area: box3;
@@ -433,6 +460,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box4 {
   grid-area: box4;
   height: 200px;
@@ -505,6 +543,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 .projects .projects-filter .box5 {
   grid-area: box5;
@@ -579,6 +628,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box6 {
   grid-area: box6;
   height: 200px;
@@ -651,6 +711,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 .projects .projects-filter .box7 {
   grid-area: box7;
@@ -725,6 +796,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box8 {
   grid-area: box8;
   height: 200px;
@@ -797,6 +879,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 .projects .projects-filter .box9 {
   grid-area: box9;
@@ -871,6 +964,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box10 {
   grid-area: box10;
   height: 200px;
@@ -943,6 +1047,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 .projects .projects-filter .box11 {
   grid-area: box11;
@@ -1017,6 +1132,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box12 {
   grid-area: box12;
   height: 200px;
@@ -1089,6 +1215,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 .projects .projects-filter .box13 {
   grid-area: box13;
@@ -1163,6 +1300,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box14 {
   grid-area: box14;
   height: 200px;
@@ -1235,6 +1383,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 .projects .projects-filter .box15 {
   grid-area: box15;
@@ -1309,6 +1468,17 @@ body {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 .projects .projects-filter .box16 {
   grid-area: box16;
   height: 200px;
@@ -1381,6 +1551,17 @@ body {
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
 }
 
 .footer {
@@ -1472,6 +1653,11 @@ body {
   }
   .header .hero .hero-content .hero-text p {
     display: none;
+  }
+  .header .projects .projects-filter {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
   }
   .about .skills .slider-container .skills-container {
     border: none;

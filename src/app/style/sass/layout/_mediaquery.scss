@@ -54,6 +54,13 @@
         }
       }
     }
+    .projects {
+      .projects-filter {
+        display: grid;
+        grid-template-columns: 1fr; // عمود واحد فقط
+        grid-template-rows: auto; // صفوف تلقائية
+      }
+    }
   }
 
   .about {
