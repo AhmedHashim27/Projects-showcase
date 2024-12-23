@@ -81,11 +81,11 @@
           position: absolute;
           top: 0;
           left: 0;
-          // transform: translateY(-100%);
-          // -webkit-transform: translateY(-100%);
-          // -moz-transform: translateY(-100%);
-          // -ms-transform: translateY(-100%);
-          // -o-transform: translateY(-100%);
+          transform: translateY(-100%);
+          -webkit-transform: translateY(-100%);
+          -moz-transform: translateY(-100%);
+          -ms-transform: translateY(-100%);
+          -o-transform: translateY(-100%);
           color: $themeColor;
           background-color: #000000b0;
           width: 100%;
@@ -108,12 +108,20 @@
         .links {
           ul {
             li {
+              .li-content {
+                @include transitions;
+                &:hover {
+                  color: $themeColor !important;
+                }
+              }
               a {
                 color: #222;
+
                 .fa-icon {
                   font-size: 24px;
                   width: 24px;
                   height: 24px;
+                 
                 }
                 span {
                   margin-left: 10px;

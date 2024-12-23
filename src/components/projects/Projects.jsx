@@ -21,7 +21,6 @@ export default function Projects() {
           return project.category === activeItem;
         });
 
-  // دالة لتحميل البيانات
   const fetchProjects = () => {
     axios
       .get("/apis/projectsData.json")
@@ -34,19 +33,14 @@ export default function Projects() {
   };
 
   useEffect(() => {
-    // تحميل البيانات أول مرة
     fetchProjects();
 
-    // تحديث البيانات كل 10 دقائق (600000 ملي ثانية)
     const intervalId = setInterval(() => {
-      fetchProjects(); // تحديث البيانات
-      // يمكنك هنا إضافة revalidatePath إذا كنت تستخدم Next.js
-      // revalidatePath('/path');
-    }, 1000); // يتم التحديث كل 10 دقائق
+      fetchProjects();
+    }, 1000); //
 
-    // تنظيف التايمر عند تدمير المكون
     return () => clearInterval(intervalId);
-  }, []); // سيتم تنفيذ هذا مرة واحدة فقط عند تحميل المكون
+  }, []); //
 
   return (
     <section className="projects">
@@ -81,25 +75,31 @@ export default function Projects() {
                         <li>
                           {project.github && (
                             <div className="links-container">
-                              <Link href={project.github}>
-                                <FontAwesomeIcon
-                                  icon={faGithubAlt}
-                                  className="fa-icon"
-                                />
-                                <span>GitHub</span>
+                              <Link href={project.github} target="_blank">
+                                <div className="li-content">
+                                  <FontAwesomeIcon
+                                    icon={faGithubAlt}
+                                    className="fa-icon"
+                                  />
+                                  <span>GitHub</span>
+                                </div>
                               </Link>
                             </div>
                           )}
                         </li>
                         <li>
                           {project.vercel && (
-                            <Link href={project.vercel}>
-                              <FontAwesomeIcon
-                                icon={faLink}
-                                className="fa-icon"
-                              />
-                              <span>Visit Site</span>
-                            </Link>
+                            <div className="link-container">
+                              <Link href={project.vercel} target="_blank">
+                                <div className="li-content">
+                                  <FontAwesomeIcon
+                                    icon={faLink}
+                                    className="fa-icon"
+                                  />
+                                  <span>Visit Site</span>
+                                </div>
+                              </Link>
+                            </div>
                           )}
                         </li>
                       </ul>

@@ -54,13 +54,6 @@
         }
       }
     }
-    .projects {
-      .projects-filter {
-        display: grid;
-        grid-template-columns: 1fr; // عمود واحد فقط
-        grid-template-rows: auto; // صفوف تلقائية
-      }
-    }
   }
 
   .about {
@@ -85,16 +78,54 @@
       }
     }
   }
+
+  .projects {
+    .projects-filter {
+      grid-template-columns: repeat(auto-fill, 1fr);
+      grid-template-rows: repeat(auto-fill, 1fr);
+      grid-template-areas:
+        "box1"
+        "box2"
+        "box3 "
+        "box4 "
+        "box5"
+        "box6"
+        "box7"
+        "box8"
+        "box9"
+        "box10"
+        "box11"
+        "box12"
+        "box13"
+        "box14"
+        "box15"
+        "box16"
+        "box17";
+    }
+  }
 }
 
-// // Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) { ... }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  .projects {
+    .projects-filter {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      gap: 10px;
 
-// // Large devices (desktops, 992px and up)
-// @media (min-width: 992px) { ... }
+      grid-template-areas:
+        "box1 box8"
+        "box2 box3"
+        "box4 box5"
+        "box6 box7"
+        "box9 box10"
+        "box11 box12"
+        "box13 box14"
+        "box15 box16"
+        "box17 box17"; // العنصر الأخير يأخذ مساحة عمودين
+    }
+    }
+  }
 
-// // X-Large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) { ... }
 
-// // XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) { ... }
