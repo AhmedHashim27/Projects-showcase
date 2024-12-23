@@ -91,7 +91,7 @@ export default function Header() {
                 <p className="text-center text-uppercase my-4">{item.hint}</p>
               </div>
               <div className="hero-button my-4">
-                <Link href="/contact">
+                <Link href="#contact">
                   <Button className="text-uppercase fw-bold" variant="primary">
                     {item.btn}
                   </Button>

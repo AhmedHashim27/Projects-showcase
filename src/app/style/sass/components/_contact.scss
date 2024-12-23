@@ -1,0 +1,96 @@
+.contact {
+  padding: 50px 0;
+  background-image: url("/assets/images/header/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  img {
+    object-fit: cover;
+    margin: 10px 0;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 1.5;
+  }
+  p {
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+  }
+
+  h6 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    line-height: 1.5;
+    width: 100%;
+  }
+  form {
+    background-color: #0f0f0f;
+    
+    padding: 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid hsl(0deg 0% 100% / 7.8%);
+    .header-contacts {
+      h3 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        line-height: 1.5;
+        margin: 10px 0 25px 0;
+      }
+    }
+    label{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        line-height: 1.5;
+    }
+    .form-control {
+      border: 1px solid hsl(0deg 0% 100% / 7.8%);
+      background-color: #0f0f0f;
+      text-transform: capitalize;
+      color: #fff !important;
+   
+    }
+    ::placeholder {
+        color: #9e9e9e !important;
+      }
+
+      .btn-primary{
+        color: #fff;
+        background-color: $themeColor;
+        border-color: $themeColor;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 10px 0;
+        border-radius: 2px;
+        padding: 15px 0;
+        text-transform: capitalize;
+        transition: .3s;
+        width: 100%;
+        &:hover{
+            background-color: #fff;
+            color: $themeColor;
+        }
+      }
+      textarea{
+        height: 200px ;
+        resize: none;
+        color: #fff !important;
+      }
+  }
+}
