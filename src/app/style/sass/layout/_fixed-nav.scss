@@ -1,0 +1,77 @@
+.fixed-navbar {
+  position: fixed;
+  bottom: -100%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  -webkit-transform: translate(-50% , -50%);
+  -moz-transform: translate(-50% , -50%);
+  -ms-transform: translate(-50% , -50%);
+  -o-transform: translate(-50% , -50%);
+  background-color: #0f0f0f;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  border: 1px solid #ffffff14;
+  z-index: 9999;
+    ul
+{
+    display: flex;
+    margin: 0;
+    padding: 10px;
+
+    li {
+      /* ضبط المارجن والمقاس الخاص بكل عنصر */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      a {
+        margin: 0 15px;
+        width: 22px; /* العرض الموحد للعنصر */
+        height: 40px; /* الارتفاع الموحد للعنصر */
+        padding: 10px; 
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        background-color: transparent; /* تغيير اللون الخلفي هنا عند الحاجة */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .fa-icon {
+          width: 22px; /* تحديد العرض الموحد للأيقونة */
+          height: 22px; /* تحديد الارتفاع الموحد للأيقونة */
+          font-size: 22px; /* ضبط حجم الأيقونة */
+          color: white; /* تحديد لون الأيقونة */
+        }
+      }
+    }
+  }
+
+  .active {
+    background-color: $themeColor; /* تغيير اللون حسب الـ themeColor أو أي لون آخر */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+}
+
+.show-fixed-navbar {
+ bottom: 10px !important;
+ transition: all 1s ease-in-out;
+ -webkit-transition: all 1s ease-in-out;
+ -moz-transition: all 1s ease-in-out;
+ -ms-transition: all 1s ease-in-out;
+ -o-transition: all 1s ease-in-out;
+}

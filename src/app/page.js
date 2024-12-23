@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import About from "../components/about-me/About";
 import Projects from "../components/projects/Projects";
 import Contact from "../components/contact/Contact";
+import FixedNav from "../components/layout/FixedNav";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
           <About />
           <Projects />
           <Contact />
+          <FixedNav />
 
          
     </>

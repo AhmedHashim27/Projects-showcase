@@ -9,7 +9,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [activeItem, setActiveItem] = useState("about");
+  const [activeItem, setActiveItem] = useState("home");
 
   // تعديل دالة handleItemClick لتعيين activeItem بشكل صحيح
   const handleItemClick = (item) => {
@@ -39,7 +39,7 @@ export default function Header() {
   }, []);
 
   return (
-    <section className="header">
+    <section className="header" id="home">
       <div className="menu">
         <Navbar expand="lg" className="py-4">
           <Container>
@@ -52,7 +52,7 @@ export default function Header() {
             />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto text-uppercase">
-                {[ "about", "projects", "contact"].map((item, index) => (
+                {[ "home", "about", "projects", "contact"].map((item, index) => (
                   <Nav.Item key={index}>
                     <Nav.Link
                       as={Link}
@@ -70,7 +70,7 @@ export default function Header() {
         </Navbar>
       </div>
 
-      <div className="hero text-light">
+      <div className="hero text-light" >
         <Container>
           {hero.map((item, index) => (
             <div className="hero-content" key={index}>
