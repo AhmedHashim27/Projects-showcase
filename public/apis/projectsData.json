@@ -11,7 +11,7 @@
   },
   {
     "id": 2,
-    "name": "flutter developer ",
+    "name": "flutter developer",
     "type": "portfolio",
     "image": "/assets/images/projects/8-portfolio.png",
     "category": "framework",
@@ -74,7 +74,7 @@
   },
   {
     "id": 9,
-    "name": " shaly store dashboard ",
+    "name": "shaly store dashboard",
     "type": "e-commerce dashboard",
     "image": "/assets/images/projects/1-dashboard.png",
     "category": "native",
@@ -119,7 +119,7 @@
   },
   {
     "id": 14,
-    "name": " dev ahmed v1",
+    "name": "dev ahmed v1",
     "type": "portfolio",
     "image": "/assets/images/projects/13-portfoliov1.png",
     "category": "native",
@@ -144,4 +144,5 @@
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
   }
+  
 ]
