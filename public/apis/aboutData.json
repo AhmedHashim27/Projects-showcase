@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/images/header/hero-avatar.jpg",
+        "title": "About me",
+        "description": " I’m Ahmed Abdellatif, a skilled Frontend Developer with experience since 2019, specializing in building responsive and dynamic web interfaces. Proficient in HTML, CSS, Bootstrap,Sass, JavaScript, React.js, and Next.js, I combine creativity and technical expertise to deliver seamless and engaging user experiences that meet modern web standards.",
+        "btn": "get in touch",
+        "skills": [
+            {
+                "id": 1,
+                "name": "HTML",
+                "image": "/assets/images/skills/html.png"
+            },
+            {
+                "id": 2,
+                "name": "CSS",
+                "image": "/assets/images/skills/css.png"
+            },
+            {
+                "id": 3,
+                "name": "Bootstrap",
+                "image": "/assets/images/skills/bootstrap.png"
+            },
+            {
+                "id": 4,
+                "name": "Sass",
+                "image": "/assets/images/skills/sass.png"
+            },
+            {
+                "id": 5,
+                "name": "JavaScript",
+                "image": "/assets/images/skills/javascript.png"
+            },
+            {
+                "id": 6,
+                "name": "git",
+                "image": "/assets/images/skills/git.png"
+            },
+            {
+                "id": 7,
+                "name": "reactjs",
+                "image": "/assets/images/skills/react.png"
+            },
+            {
+                "id": 8,
+                "name": "nextjs",
+                "image": "/assets/images/skills/next.png"
+            }
+        ]
+    }
+]

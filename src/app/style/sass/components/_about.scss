@@ -68,20 +68,15 @@
         -o-border-radius: 3px;
       }
       .slider-item {
-        position: relative;
         margin: auto;
-        height: 100px;
+
         cursor: pointer;
 
-        img {
-          padding: 10px;
-          object-fit: contain;
-
-          margin-top: 10px;
-        }
+   
       }
       .skill-name {
         h6 {
+      
           margin-top: 10px;
           letter-spacing: 3px;
           line-height: 1.9;

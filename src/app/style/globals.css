@@ -182,16 +182,8 @@ a {
   -o-border-radius: 3px;
 }
 .about .skills .slider-container .slider-item {
-  position: relative;
   margin: auto;
-  height: 100px;
   cursor: pointer;
-}
-.about .skills .slider-container .slider-item img {
-  padding: 10px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  margin-top: 10px;
 }
 .about .skills .slider-container .skill-name h6 {
   margin-top: 10px;
