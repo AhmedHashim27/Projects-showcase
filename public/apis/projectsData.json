@@ -45,8 +45,18 @@
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
   },
+
   {
     "id": 6,
+    "name": "meamar degla",
+    "type": "Real estate",
+    "image": "/images/projects/16-taptravel.png",
+    "category": "framework",
+    "github": "https://github.com/ahmeddev01/styler-store",
+    "vercel": "https://styler-store.vercel.app/"
+  },
+  {
+    "id": 7,
     "name": "develogs",
     "type": "software house",
     "image": "/images/projects/2-develogs.png",
@@ -55,7 +65,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 7,
+    "id": 8,
     "name": "pms",
     "type": "products management system",
     "image": "/images/projects/7-pms.png",
@@ -64,7 +74,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 8,
+    "id": 9,
     "name": "shaly store",
     "type": "e-commerce",
     "image": "/images/projects/10-shaly.png",
@@ -73,7 +83,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 9,
+    "id": 10,
     "name": "shaly store dashboard",
     "type": "e-commerce dashboard",
     "image": "/images/projects/1-dashboard.png",
@@ -82,7 +92,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 10,
+    "id": 11,
     "name": "Hoochat",
     "type": "landing page",
     "image": "/images/projects/4-hoochat.png",
@@ -91,7 +101,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 11,
+    "id": 12,
     "name": "nice day",
     "type": "party children",
     "image": "/images/projects/6-nice-day.png",
@@ -100,7 +110,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 12,
+    "id": 13,
     "name": "smart avenue",
     "type": "marketing",
     "image": "/images/projects/11-smart-avenue.png",
@@ -109,7 +119,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 13,
+    "id": 14,
     "name": "wfitness",
     "type": "gem",
     "image": "/images/projects/12-wfitness.png",
@@ -118,7 +128,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 14,
+    "id": 15,
     "name": "dev ahmed v1",
     "type": "portfolio",
     "image": "/images/projects/13-portfoliov1.png",
@@ -127,7 +137,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 15,
+    "id": 16,
     "name": "elmskny",
     "type": "Legal consultations",
     "image": "/images/projects/3-elmskny.png",
@@ -136,7 +146,7 @@
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 16,
+    "id": 17,
     "name": "roukhsa Project",
     "type": "License renewal",
     "image": "/images/projects/9-roukhsa.png",
