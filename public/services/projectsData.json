@@ -3,146 +3,164 @@
     "id": 1,
     "name": "styler store",
     "type": "e-commerce",
-    "image": "/assets/images/projects/17-styler.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050252/17-styler_khubft.png",
     "technology": "react nextjs",
     "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "vercel": "https://stylerstore.vercel.app/"
   },
   {
     "id": 2,
     "name": "flutter developer",
     "type": "portfolio",
-    "image": "/assets/images/projects/8-portfolio.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050235/8-portfolio_ioclxn.png",
     "category": "framework",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/karimportfolio",
+    "vercel": "https://karimportfolio.vercel.app/"
   },
   {
     "id": 3,
     "name": "pa tech",
     "type": "e-commerce",
-    "image": "/assets/images/projects/15-patech.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050246/15-patech_tjrbqw.png",
     "category": "framework",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/pa-tech",
+    "vercel": "https://patech.vercel.app/"
   },
   {
     "id": 4,
     "name": "pa store",
     "type": "book store",
-    "image": "/assets/images/projects/14-pastore.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050250/14-pastore_nfl2wt.png",
     "category": "framework",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/pa-store",
+    "vercel": "https://pa-store-book.vercel.app/"
   },
   {
     "id": 5,
     "name": "meamar degla",
     "type": "Real estate",
-    "image": "/assets/images/projects/5-meamar.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050230/5-meamar_kjvsnu.png",
     "category": "framework",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/meamar",
+    "vercel": "https://meamaardegla.vercel.app/"
   },
   {
     "id": 6,
     "name": "develogs",
     "type": "software house",
-    "image": "/assets/images/projects/2-develogs.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050231/2-develogs_vtnvap.png",
     "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "vercel": "https://develogs.vercel.app/"
   },
   {
     "id": 7,
     "name": "pms",
     "type": "products management system",
-    "image": "/assets/images/projects/7-pms.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050235/7-pms_drp4gz.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/pms",
+    "vercel": "https://pms-self.vercel.app/"
   },
   {
     "id": 8,
     "name": "shaly store",
     "type": "e-commerce",
-    "image": "/assets/images/projects/10-shaly.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050230/10-shaly_syodhl.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/shaly",
+    "vercel": "https://shaly-store.vercel.app/"
   },
   {
     "id": 9,
     "name": "shaly store dashboard",
     "type": "e-commerce dashboard",
-    "image": "/assets/images/projects/1-dashboard.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050228/1-dashboard_lgjlja.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
+    "github": "https://github.com/ahmedabdellatifhosny/shaly/tree/main/dashboard",
     "vercel": "https://styler-store.vercel.app/"
   },
   {
     "id": 10,
     "name": "Hoochat",
     "type": "landing page",
-    "image": "/assets/images/projects/4-hoochat.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050228/4-hoochat_d8488v.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/hoochat",
+    "vercel": "https://hoochat.vercel.app/"
   },
   {
     "id": 11,
     "name": "nice day",
     "type": "party children",
-    "image": "/assets/images/projects/6-nice-day.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050248/6-nice-day_hzs1sn.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/niceday",
+    "vercel": "https://nicedayparty.vercel.app/"
   },
   {
     "id": 12,
     "name": "smart avenue",
     "type": "marketing",
-    "image": "/assets/images/projects/11-smart-avenue.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050235/11-smart-avenue_xwudc3.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/smart-avenue",
+    "vercel": "https://smart-avenue.vercel.app/"
   },
   {
     "id": 13,
     "name": "wfitness",
     "type": "gem",
-    "image": "/assets/images/projects/12-wfitness.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050238/12-wfitness_k2xwtz.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/Wfitness",
+    "vercel": "https://wfitness.vercel.app/"
   },
   {
     "id": 14,
     "name": "dev ahmed v1",
     "type": "portfolio",
-    "image": "/assets/images/projects/13-portfoliov1.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050240/13-portfoliov1_y5ugzd.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "vercel": "https://ahmedabdellatif.vercel.app/"
   },
   {
     "id": 15,
     "name": "elmskny",
     "type": "Legal consultations",
-    "image": "/assets/images/projects/3-elmskny.png",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050245/3-elmskny_we414d.png",
     "category": "native",
+    "github": "https://github.com/ahmedabdellatifhosny/elmskny",
+    "vercel": "https://elmskny.vercel.app/"
+  },
+  {
+    "id": 16,
+    "name": "roukhsa ",
+    "type": "License renewal",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050238/9-roukhsa_x86qsu.png",
+    "category": "native",
+    "github": "https://github.com/ahmedabdellatifhosny/rokhsa",
+    "vercel": "https://rokhsa.vercel.app/"
+  },
+
+  {
+    "id": 17,
+    "name": "taptravel ",
+    "type": "License renewal",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050260/16-taptravel_hvmnpb.png",
+    "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
   },
   {
-    "id": 16,
-    "name": "roukhsa Project",
+    "id": 18,
+    "name": "devahmed v2 ",
     "type": "License renewal",
-    "image": "/assets/images/projects/9-roukhsa.png",
-    "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050249/test_aztpzl.png",
+    "category": "framework",
+    "github": "https://github.com/ahmedabdellatifhosny/portfolio-v2",
+    "vercel": "https://devahmed.vercel.app/"
   }
-  
 ]

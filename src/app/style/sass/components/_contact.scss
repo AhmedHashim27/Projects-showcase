@@ -18,20 +18,22 @@
   h2 {
     font-size: 50px;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     line-height: 1.5;
   }
   p {
     font-size: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     line-height: 1.5;
   }
 
   h6 {
     font-size: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     line-height: 1.5;
+    font-weight: 100;
     width: 100%;
+    color: #ccc;
   }
   form {
     background-color: #0f0f0f;
@@ -46,7 +48,7 @@
     .header-contacts {
       h3 {
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
         line-height: 1.5;
         margin: 10px 0 25px 0;
       }

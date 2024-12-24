@@ -1,27 +1,37 @@
 "use client";
 import axios from "axios";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import emailjs from "emailjs-com";
 
 export default function Contact() {
   const [contact, setContact] = useState([]);
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+  const [error, setError] = useState("");
+  const form = useRef(null);
 
   // تهيئة AOS
   useEffect(() => {
     AOS.init({
-      duration: 1000, // مدة التأثير
-      easing: "ease-in-out", // تأثير التحرك
-      once: false, // لا يتم تنفيذ التأثير مرة واحدة فقط
-      offset: 200, // التأثير يبدأ عندما يصل العنصر إلى 200px من أعلى الصفحة
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      offset: 200,
     });
 
     return () => {
-      AOS.refresh(); // تحديث التأثيرات عند فك التثبيت
+      AOS.refresh();
     };
   }, []);
 
@@ -30,7 +40,6 @@ export default function Contact() {
     axios
       .get("/services/contactData.json")
       .then(function (response) {
-        // console.log(response.data);
         setContact(response.data);
       })
       .catch(function (error) {
@@ -42,19 +51,58 @@ export default function Contact() {
   useEffect(() => {
     fetchDataContact();
 
-    // إذا كنت بحاجة إلى جلب البيانات بشكل دوري (مثل كل ثانية)
     const intervalId = setInterval(() => {
       fetchDataContact();
-    }, 1000); // يتم التحديث كل ثانية
+    }, 1000);
 
-    // تنظيف عند فك التثبيت
     return () => clearInterval(intervalId);
   }, []);
 
   // استخدام AOS بعد تحميل البيانات
   useEffect(() => {
-    AOS.refresh(); // إعادة تحديث التأثيرات بعد تحميل البيانات
-  }, [contact]); // تتغير عندما يتم تحديث contact
+    AOS.refresh();
+  }, [contact]);
+
+  // دالة لإرسال النموذج عبر EmailJS
+  const handleSendForm = (e) => {
+    e.preventDefault();
+
+    // التحقق من أن جميع الحقول مليئة
+    if (!formData.fullName || !formData.email || !formData.subject || !formData.message) {
+      setError("All fields are required!");
+      setStatus(""); // إخفاء حالة النجاح أو الفشل السابقة
+      return;
+    }
+
+    setError(""); // إعادة تعيين حالة الخطأ إذا كانت جميع الحقول ممتلئة
+
+    // إرسال البيانات عبر EmailJS
+    emailjs
+      .sendForm(
+        "service_78adzpn",
+        "template_nqvusdg",
+        form.current, // استخدام الـ ref بشكل صحيح
+        "LbD7z8RG1xdqwfwAK"
+      )
+      .then(
+        (result) => {
+          console.log("SUCCESS:", result.text);
+          setStatus("text-center text-success'>Message sent successfully!");
+          
+          // إفراغ الحقول بعد النجاح
+          setFormData({
+            fullName: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log("FAILED:", error.text);
+          setStatus("<p className='text-center text-danger'>Failed to send message.</p>");
+        }
+      );
+  };
 
   return (
     <section className="contact" id="contact" data-aos="fade-in">
@@ -76,42 +124,73 @@ export default function Contact() {
               </div>
             </Col>
             <Col md={6}>
-              <Form>
+              <Form ref={form} onSubmit={handleSendForm}>
                 <div className="header-contacts">
                   <h3>{item.section}</h3>
                 </div>
                 <Row>
                   <Col md={6}>
                     <Form.Group className="mb-3">
-                      <Form.Label>FullName</Form.Label>
-                      <Form.Control type="text" placeholder="ahmed abdellatif" />
+                      <Form.Label>Full Name</Form.Label>
+                      <Form.Control
+                        type="text"
+                        placeholder="ahmed abdellatif"
+                        name="user_name"
+                        value={formData.fullName}
+                        onChange={(e) =>
+                          setFormData({ ...formData, fullName: e.target.value })
+                        }
+                      />
                     </Form.Group>
                   </Col>
                   <Col md={6}>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                      <Form.Label>Email address</Form.Label>
-                      <Form.Control type="email" placeholder="ahmedabdellatifhosny@gmail.com" />
+                      <Form.Label>Email Address</Form.Label>
+                      <Form.Control
+                        type="email"
+                        placeholder="ahmedabdellatifhosny@gmail.com"
+                        name="user_email"
+                        value={formData.email}
+                        onChange={(e) =>
+                          setFormData({ ...formData, email: e.target.value })
+                        }
+                      />
                     </Form.Group>
                   </Col>
                 </Row>
 
                 <Form.Group className="mb-3">
-                  <Form.Label>subject</Form.Label>
-                  <Form.Control type="text" placeholder="your subject" />
+                  <Form.Label>Subject</Form.Label>
+                  <Form.Control
+                    type="text"
+                    placeholder="Your subject"
+                    name="subject"
+                    value={formData.subject}
+                    onChange={(e) =>
+                      setFormData({ ...formData, subject: e.target.value })
+                    }
+                  />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Label>your message</Form.Label>
+                  <Form.Label>Your Message</Form.Label>
                   <Form.Control
                     as="textarea"
                     placeholder="Leave a message here"
+                    name="message"
+                    value={formData.message}
+                    onChange={(e) =>
+                      setFormData({ ...formData, message: e.target.value })
+                    }
                   />
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Button variant="primary" type="submit">
-                    send your message
+                    Send Your Message
                   </Button>
                 </Form.Group>
               </Form>
+              {status && <div className="text-center mt-3 bg-success pt-3 pb-1 rounded" dangerouslySetInnerHTML={{ __html: status }} />}
+              {error && <p className="text-center  mt-3 bg-danger pt-3 pb-3 rounded">{error}</p>}
             </Col>
           </Row>
         </Container>

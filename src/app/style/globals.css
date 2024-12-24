@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 body,
 html {
   scroll-behavior: smooth;
@@ -10,6 +11,9 @@ body {
   box-sizing: border-box;
   background-color: #000;
   color: #fff;
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +31,7 @@ a {
 }
 
 .header {
-  background-image: url("/assets/images/header/hero-bg.jpg");
+  background-image: url("/images/header/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -166,7 +170,6 @@ a {
   letter-spacing: 5px;
   line-height: 2;
   font-size: 19px;
-  font-weight: 700;
   color: #ccc;
   width: 92%;
   margin: auto;
@@ -212,7 +215,7 @@ a {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(200px, 1fr));
   gap: 10px;
-  grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box5 box5 box6 box6 " "box7 box7 box8 box8 box9 box9" "box10 box10 box11 box11 box12 box12" "box13 box13 box14 box15 box15 box15" "box16 box16 box17 box17 . .";
+  grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box5 box5 box6 box6 " "box7 box7 box8 box8 box9 box9" "box10 box10 box11 box11 box12 box12" "box13 box13 box14 box15 box15 box15" "box16 box16 box17 box17 box18  box18";
 }
 .projects .projects-filter .box1 {
   grid-area: box1;
@@ -1798,6 +1801,204 @@ a {
 .projects .projects-filter .head-image .links ul li a span {
   margin-left: 10px;
 }
+.projects .projects-filter .box17 {
+  grid-area: box17;
+  height: 200px;
+  background-color: #222;
+  cursor: pointer;
+}
+.projects .projects-filter .box17:hover .project-details {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.projects .projects-filter .head-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.projects .projects-filter .head-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.projects .projects-filter .head-image img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.projects .projects-filter .head-image .project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  color: #FF9409;
+  background-color: rgba(0, 0, 0, 0.6901960784);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  transition: transform 1s ease-in-out;
+}
+.projects .projects-filter .head-image .project-details .desc {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li .li-content {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.projects .projects-filter .head-image .links ul li .li-content:hover {
+  color: #FF9409 !important;
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
+.projects .projects-filter .box18 {
+  grid-area: box18;
+  height: 200px;
+  background-color: #222;
+  cursor: pointer;
+}
+.projects .projects-filter .box18:hover .project-details {
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+.projects .projects-filter .head-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.projects .projects-filter .head-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+.projects .projects-filter .head-image img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+.projects .projects-filter .head-image .project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  color: #FF9409;
+  background-color: rgba(0, 0, 0, 0.6901960784);
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  transition: transform 1s ease-in-out;
+}
+.projects .projects-filter .head-image .project-details .desc {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.projects .projects-filter .head-image .links ul li .li-content {
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.projects .projects-filter .head-image .links ul li .li-content:hover {
+  color: #FF9409 !important;
+}
+.projects .projects-filter .head-image .links ul li a {
+  color: #222;
+}
+.projects .projects-filter .head-image .links ul li a .fa-icon {
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+.projects .projects-filter .head-image .links ul li a span {
+  margin-left: 10px;
+}
 
 .contact {
   padding: 50px 0;
@@ -1819,19 +2020,21 @@ a {
 .contact h2 {
   font-size: 50px;
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   line-height: 1.5;
 }
 .contact p {
   font-size: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   line-height: 1.5;
 }
 .contact h6 {
   font-size: 20px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   line-height: 1.5;
+  font-weight: 100;
   width: 100%;
+  color: #ccc;
 }
 .contact form {
   background-color: #0f0f0f;
@@ -1845,7 +2048,7 @@ a {
 }
 .contact form .header-contacts h3 {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   line-height: 1.5;
   margin: 10px 0 25px 0;
 }
@@ -1900,7 +2103,7 @@ a {
   padding: 30px 0;
 }
 .footer .social-media-icons ul a {
-  padding: 10px 15px 15px 15px;
+  padding: 10px 13px 10px;
   background-color: #333;
   border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -1937,6 +2140,7 @@ a {
 }
 
 .fixed-navbar {
+  padding: 5px 20px;
   position: fixed;
   bottom: -100%;
   left: 50%;
@@ -1962,7 +2166,7 @@ a {
 .fixed-navbar ul {
   display: flex;
   margin: 0;
-  padding: 10px;
+  gap: 25px;
 }
 .fixed-navbar ul li {
   /* ضبط المارجن والمقاس الخاص بكل عنصر */
@@ -1971,33 +2175,40 @@ a {
   justify-content: center;
 }
 .fixed-navbar ul li a {
-  margin: 0 15px;
-  width: 22px; /* العرض الموحد للعنصر */
-  height: 40px; /* الارتفاع الموحد للعنصر */
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixed-navbar ul li a .fa-icon {
+  font-size: 18px; /* ضبط حجم الأيقونة */
+  color: white; /* تحديد لون الأيقونة */
+  border: 1px solid rgba(255, 255, 255, 0.0784313725);
   padding: 10px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  background-color: transparent; /* تغيير اللون الخلفي هنا عند الحاجة */
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.fixed-navbar ul li a .fa-icon {
-  width: 22px; /* تحديد العرض الموحد للأيقونة */
-  height: 22px; /* تحديد الارتفاع الموحد للأيقونة */
-  font-size: 22px; /* ضبط حجم الأيقونة */
-  color: white; /* تحديد لون الأيقونة */
+.fixed-navbar ul li a .fa-icon:hover {
+  background-color: #FF9409;
 }
 .fixed-navbar .active {
-  background-color: #FF9409; /* تغيير اللون حسب الـ themeColor أو أي لون آخر */
+  background-color: #FF9409;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+.fixed-navbar .fa-user,
+.fixed-navbar .fa-gem {
+  width: 20px !important;
 }
 
 .show-fixed-navbar {

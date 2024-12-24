@@ -26,7 +26,7 @@ export default function Projects() {
     };
   }, []);
 
-  const handleItemClick = ({ item }) => {
+  const handleItemClick = (item) => {
     setActiveItem(item);
   };
 
@@ -72,7 +72,7 @@ export default function Projects() {
               <li
                 key={index}
                 className={activeItem === item ? "active" : ""}
-                onClick={() => handleItemClick({ item })}
+                onClick={() => handleItemClick(item )}
               >
                 {item}
               </li>
