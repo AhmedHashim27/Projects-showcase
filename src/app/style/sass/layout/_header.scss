@@ -4,6 +4,7 @@
   background-size: cover;
   background-position: center;
   height: 100vh;
+
   .menu {
     .navbar {
       .navbar-toggler-icon {
@@ -42,9 +43,11 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       .hero-image {
         position: relative;
         width: 100%;
+        
         img {
           position: absolute;
           top: -70px;
@@ -53,6 +56,7 @@
           object-fit: cover;
         }
       }
+
       .hero-text {
         h1 {
           padding: 10px 0;
@@ -60,37 +64,32 @@
           position: relative;
           z-index: 2;
         }
+
         p {
           letter-spacing: 5px;
           line-height: 1.9;
         }
       }
+
       .hero-button {
         position: relative;
         transition: all 0.5s ease-in-out;
-        -webkit-transition: all 0.5s ease-in-out;
-        -moz-transition: all 0.5s ease-in-out;
-        -ms-transition: all 0.5s ease-in-out;
-        -o-transition: all 0.5s ease-in-out;
+        cursor: pointer;
+        
         &:hover {
           span {
-            width: 100%;
+            width: 100%; /* هذا سيجعل الـ span يمتد عند التمرير */
           }
         }
 
         span {
           position: absolute;
-          width: 0;
+          width: 0; /* العرض الأولي 10% */
           height: 100%;
           background: #ff9409;
           border-radius: 2px;
-          z-index: 1 !important;
-          transition: width 3s ease-in-out;
-          //أضفانتقالًالتأثيرالملء:;
-          -webkit-transition: width 1s ease-in-out;
-          -moz-transition: width 1s ease-in-out;
-          -ms-transition: width 1s ease-in-out;
-          -o-transition: width 1s ease-in-out;
+          z-index: 1; /* التأكد من أن الـ span يظهر فوق باقي العناصر */
+          transition: width 1s ease-in-out; /* مدة الانتقال 1 ثانية */
         }
 
         .btn-primary {

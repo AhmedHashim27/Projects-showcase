@@ -32,8 +32,8 @@ export default function Header() {
     fetchProjects(); // استدعاء البيانات مرة واحدة عند تحميل الصفحة
 
     const intervalId = setInterval(() => {
-      fetchProjects(); // التحديث المتكرر إذا لزم الأمر
-    }, 10000); // التحديث كل 10 ثواني
+      fetchProjects();
+    }, 10000); 
 
     return () => clearInterval(intervalId);
   }, []);
@@ -92,10 +92,12 @@ export default function Header() {
                   <p className="text-center text-uppercase my-4">{item.hint}</p>
                 </div>
                 <div className="hero-button my-4">
+                <span></span>
                   <Link href="#contact">
                     <Button className="text-uppercase fw-bold" variant="primary">
                       {item.btn}
                     </Button>
+                   
                   </Link>
                 </div>
               </div>

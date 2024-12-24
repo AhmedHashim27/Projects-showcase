@@ -93,26 +93,19 @@ a {
 .header .hero .hero-content .hero-button {
   position: relative;
   transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 .header .hero .hero-content .hero-button:hover span {
-  width: 100%;
+  width: 100%; /* هذا سيجعل الـ span يمتد عند التمرير */
 }
 .header .hero .hero-content .hero-button span {
   position: absolute;
-  width: 0;
+  width: 0; /* العرض الأولي 10% */
   height: 100%;
   background: #ff9409;
   border-radius: 2px;
-  z-index: 1 !important;
-  transition: width 3s ease-in-out;
-  -webkit-transition: width 1s ease-in-out;
-  -moz-transition: width 1s ease-in-out;
-  -ms-transition: width 1s ease-in-out;
-  -o-transition: width 1s ease-in-out;
+  z-index: 1; /* التأكد من أن الـ span يظهر فوق باقي العناصر */
+  transition: width 1s ease-in-out; /* مدة الانتقال 1 ثانية */
 }
 .header .hero .hero-content .hero-button .btn-primary {
   position: relative;
