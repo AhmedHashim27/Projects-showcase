@@ -63,26 +63,6 @@ export default function Projects() {
     AOS.refresh(); // تحديث التأثيرات بعد تحميل المشاريع
   }, [projects]); // التفاعل مع تحديث بيانات المشاريع
 
-  const projectsImage = [
-    { id: 1, image: "/images/projects/17-styler.png" },
-    { id: 2, image: "/images/projects/15-patech.png" },
-    { id: 3, image: "/images/projects/14-pastore.png" },
-    { id: 4, image: "/images/projects/5-meamar.png" },
-    { id: 5, image: "/images/projects/16-taptravel.png" },
-    { id: 6, image: "/images/projects/2-develogs.png" },
-    { id: 7, image: "/images/projects/7-pms.png" },
-    { id: 8, image: "/images/projects/10-shaly.png" },
-    { id: 9, image: "/images/projects/1-dashboard.png" },
-    { id: 10, image: "/images/projects/4-hoochat.png" },
-    { id: 11, image: "/images/projects/6-nice-day.png" },
-    { id: 12, image: "/images/projects/11-smart-avenue.png" },
-    { id: 13, image: "/images/projects/12-wfitness.png" },
-    { id: 14, image: "/images/projects/13-portfoliov1.png" },
-    { id: 15, image: "/images/projects/3-elmskny.png" },
-    { id: 16, image: "/images/projects/9-roukhsa.png" },
-    { id: 17, image: "/images/projects/18-sample.png" }, // الصورة رقم 17
-  ];
-
   return (
     <section className="projects" id="projects" data-aos="fade-in">
       <Container>
@@ -105,8 +85,7 @@ export default function Projects() {
             <div key={index} className={`box${index + 1}`} data-aos="fade-up">
               <div className="head-image">
                 <Image
-                  key={index}
-                  src={projectsImage[index]?.image} // اختار الصورة بناءً على الفهرس
+                  src={project.image}
                   alt={project.name}
                   fill
                   priority
