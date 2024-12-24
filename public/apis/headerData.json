@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "image" : "/assets/images/header/hero-avatar.jpg",
+        "image" : "/images/header/hero-avatar.jpg",
         "name": "Professional",
         "title": "Frontend Developer",
         "hint": "  Hi, I’m Ahmed, a creative Frontend Developer passionate about crafting intuitive and engaging user interfaces.",

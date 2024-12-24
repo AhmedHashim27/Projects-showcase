@@ -30,7 +30,7 @@ export default function Contact() {
     axios
       .get("/apis/contactData.json")
       .then(function (response) {
-        console.log(response.data);
+        // console.log(response.data);
         setContact(response.data);
       })
       .catch(function (error) {

@@ -2,7 +2,7 @@
     {
         "id": 1,
         "section": "Contact Me",
-        "image": "/assets/images/header/hero-avatar.jpg",
+        "image": "/images/header/hero-avatar.jpg",
         "title": "Are you ready?",
         "description": "Elevate Your Brand experience to the next level",
         "hint": "Hi, I’m Ahmed, a creative Frontend Developer passionate about crafting intuitive and engaging user interfaces."

@@ -1801,11 +1801,10 @@ a {
 
 .contact {
   padding: 50px 0;
-  background-image: url("/assets/images/header/hero-bg.jpg");
+  background-image: url("/images/header/hero-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 100vh;
 }
 .contact img {
   -o-object-fit: cover;

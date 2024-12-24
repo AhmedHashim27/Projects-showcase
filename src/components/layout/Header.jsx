@@ -21,7 +21,7 @@ export default function Header() {
   const fetchProjects = async () => {
     try {
       const response = await axios.get("/apis/headerData.json");
-      console.log(response.data); // تحقق من البيانات
+      // console.log(response.data); // تحقق من البيانات
       setHero(response.data);
     } catch (error) {
       console.log("Error fetching projects:", error);
