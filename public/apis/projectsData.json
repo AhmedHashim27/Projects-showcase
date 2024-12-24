@@ -3,17 +3,15 @@
     "id": 1,
     "name": "styler store",
     "type": "e-commerce",
-    "image": "/images/projects/17-styler.png",
     "technology": "react nextjs",
     "category": "framework",
-    "github": "https://github.com/ahmeddev01/styler-store",
-    "vercel": "https://styler-store.vercel.app/"
+    "github": "https://github.com/ahmedabdellatifhosny/styler",
+    "vercel": "https://stylerstore.vercel.app/"
   },
   {
     "id": 2,
     "name": "flutter developer",
     "type": "portfolio",
-    "image": "/images/projects/8-portfolio.png",
     "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -22,7 +20,6 @@
     "id": 3,
     "name": "pa tech",
     "type": "e-commerce",
-    "image": "/images/projects/15-patech.png",
     "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -31,7 +28,6 @@
     "id": 4,
     "name": "pa store",
     "type": "book store",
-    "image": "/images/projects/14-pastore.png",
     "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -45,12 +41,10 @@
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
   },
-
   {
     "id": 6,
     "name": "meamar degla",
     "type": "Real estate",
-    "image": "/images/projects/16-taptravel.png",
     "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -59,7 +53,6 @@
     "id": 7,
     "name": "develogs",
     "type": "software house",
-    "image": "/images/projects/2-develogs.png",
     "category": "framework",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -68,7 +61,6 @@
     "id": 8,
     "name": "pms",
     "type": "products management system",
-    "image": "/images/projects/7-pms.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -77,7 +69,6 @@
     "id": 9,
     "name": "shaly store",
     "type": "e-commerce",
-    "image": "/images/projects/10-shaly.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -86,7 +77,6 @@
     "id": 10,
     "name": "shaly store dashboard",
     "type": "e-commerce dashboard",
-    "image": "/images/projects/1-dashboard.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -95,7 +85,6 @@
     "id": 11,
     "name": "Hoochat",
     "type": "landing page",
-    "image": "/images/projects/4-hoochat.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -104,7 +93,6 @@
     "id": 12,
     "name": "nice day",
     "type": "party children",
-    "image": "/images/projects/6-nice-day.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -113,7 +101,6 @@
     "id": 13,
     "name": "smart avenue",
     "type": "marketing",
-    "image": "/images/projects/11-smart-avenue.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -122,7 +109,6 @@
     "id": 14,
     "name": "wfitness",
     "type": "gem",
-    "image": "/images/projects/12-wfitness.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -131,7 +117,6 @@
     "id": 15,
     "name": "dev ahmed v1",
     "type": "portfolio",
-    "image": "/images/projects/13-portfoliov1.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -140,7 +125,6 @@
     "id": 16,
     "name": "elmskny",
     "type": "Legal consultations",
-    "image": "/images/projects/3-elmskny.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
@@ -149,10 +133,8 @@
     "id": 17,
     "name": "roukhsa Project",
     "type": "License renewal",
-    "image": "/images/projects/9-roukhsa.png",
     "category": "native",
     "github": "https://github.com/ahmeddev01/styler-store",
     "vercel": "https://styler-store.vercel.app/"
   }
-  
 ]

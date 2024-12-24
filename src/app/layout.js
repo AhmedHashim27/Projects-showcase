@@ -10,7 +10,7 @@ export const metadata = {
   title: "Dev Ahmed - Portfolio",
   description: "Portfolio of Dev Ahmed - frontend developer ",
   icons :{
-    icon : "/assets/images/header/hero-avatar.jpg"
+    icon : "/images/header/hero-avatar.jpg"
   }
 };
 
