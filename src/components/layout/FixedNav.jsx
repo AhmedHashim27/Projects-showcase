@@ -1,13 +1,10 @@
 "use client";
-import {
-  faGem,
-  faHouse,
-  faMarker,
-  faUser,
-} from "@fortawesome/free-solid-svg-icons";
+import { faGem, faHouse, faMarker, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // استيراد ملف الـ CSS الخاص بـ AOS
 
 export default function FixedNav() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -18,11 +15,17 @@ export default function FixedNav() {
   };
 
   useEffect(() => {
+    // تهيئة AOS
+    AOS.init({
+      duration: 1000, // مدة التأثير
+      once: true, // تفعيل التأثير مرة واحدة فقط
+    });
+
     const handleScroll = () => {
       if (window.scrollY > 90) {
-        setShowNavbar(true); // إضافة الكلاس عند التمرير لأكثر من 500px
+        setShowNavbar(true); // إضافة الكلاس عند التمرير لأكثر من 90px
       } else {
-        setShowNavbar(false); // إزالة الكلاس إذا كان التمرير أقل من 500px
+        setShowNavbar(false); // إزالة الكلاس إذا كان التمرير أقل من 90px
       }
     };
 
@@ -35,12 +38,12 @@ export default function FixedNav() {
   }, []);
 
   return (
-    <section className={`fixed-navbar ${showNavbar ? "show-fixed-navbar" : ""}`}>
-      <ul className="list-unstyled">
+    <section className={`fixed-navbar ${showNavbar ? "show-fixed-navbar" : ""}`} >
+      <ul className="list-unstyled" >
         <li
           className={activeIndex === 0 ? "active" : ""}
           onClick={() => handleClick(0)} // تغيير الحالة عند النقر
-       
+          data-aos="fade-up" // تأثير AOS
         >
           <Link href="#home">
             <FontAwesomeIcon icon={faHouse} className="fa-icon" />
@@ -49,6 +52,7 @@ export default function FixedNav() {
         <li
           className={activeIndex === 1 ? "active" : ""}
           onClick={() => handleClick(1)} // تغيير الحالة عند النقر
+          data-aos="fade-up" // تأثير AOS
         >
           <Link href="#about">
             <FontAwesomeIcon icon={faUser} className="fa-icon" />
@@ -57,6 +61,7 @@ export default function FixedNav() {
         <li
           className={activeIndex === 2 ? "active" : ""}
           onClick={() => handleClick(2)} // تغيير الحالة عند النقر
+          data-aos="fade-up" // تأثير AOS
         >
           <Link href="#projects">
             <FontAwesomeIcon icon={faGem} className="fa-icon" />
@@ -65,6 +70,7 @@ export default function FixedNav() {
         <li
           className={activeIndex === 3 ? "active" : ""}
           onClick={() => handleClick(3)} // تغيير الحالة عند النقر
+          data-aos="fade-up" // تأثير AOS
         >
           <Link href="#contact">
             <FontAwesomeIcon icon={faMarker} className="fa-icon" />

@@ -4,8 +4,25 @@ import Image from "next/image";
 import Slider from "react-slick";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function About() {
+  const [about, setAbout] = useState([]);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // مدة التأثير
+      easing: "ease-in-out", // تأثير التحرك
+      once: false, // لا يتم تنفيذ التأثير مرة واحدة فقط
+      offset: 200, // التأثير يبدأ عندما يصل العنصر إلى 200px من أعلى الصفحة
+    });
+
+    return () => {
+      AOS.refresh(); // إعادة تحديث التأثيرات عند فك التثبيت
+    };
+  }, []);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -34,8 +51,6 @@ export default function About() {
     ],
   };
 
-  const [about, setAbout] = useState([]);
-
   const fetchProjects = () => {
     axios
       .get("/apis/aboutData.json")
@@ -52,13 +67,18 @@ export default function About() {
 
     const intervalId = setInterval(() => {
       fetchProjects();
-    }, 1000); //
+    }, 1000); 
 
     return () => clearInterval(intervalId);
   }, []);
 
+  // استدعاء AOS.refresh() عند تحديث البيانات
+  useEffect(() => {
+    AOS.refresh(); // تحديث التأثيرات بعد تحميل البيانات
+  }, [about]);
+
   return (
-    <section className="about" id="about">
+    <section className="about" id="about" data-aos="fade-in">
       {about.map((item, index) => (
         <Container fluid key={index}>
           <Row>
@@ -78,7 +98,7 @@ export default function About() {
                         <div key={index} className="skills-container">
                           <div className="slider-item">
                             <Image
-                            className="mx-auto mb-3"
+                              className="mx-auto mb-3"
                               src={skill.image}
                               alt={skill.name}
                               width={100}

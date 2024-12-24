@@ -11,35 +11,35 @@ import { useEffect, useState } from "react";
 export default function Header() {
   const [activeItem, setActiveItem] = useState("home");
 
-  // تعديل دالة handleItemClick لتعيين activeItem بشكل صحيح
+  // دالة handleItemClick المعدلة
   const handleItemClick = (item) => {
     setActiveItem(item);
   };
 
   const [hero, setHero] = useState([]);
-  const fetchProjects = () => {
-    axios
-      .get("/apis/headerData.json")
-      .then(function (response) {
-        setHero(response.data);
-      })
-      .catch(function (error) {
-        console.log("Error fetching projects:", error);
-      });
+
+  const fetchProjects = async () => {
+    try {
+      const response = await axios.get("/apis/headerData.json");
+      console.log(response.data); // تحقق من البيانات
+      setHero(response.data);
+    } catch (error) {
+      console.log("Error fetching projects:", error);
+    }
   };
 
   useEffect(() => {
-    fetchProjects();
+    fetchProjects(); // استدعاء البيانات مرة واحدة عند تحميل الصفحة
 
     const intervalId = setInterval(() => {
-      fetchProjects();
-    }, 1000);
+      fetchProjects(); // التحديث المتكرر إذا لزم الأمر
+    }, 10000); // التحديث كل 10 ثواني
 
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <section className="header" id="home">
+    <section className="header" id="home" data-aos="fade-in">
       <div className="menu">
         <Navbar expand="lg" className="py-4">
           <Container>
@@ -52,13 +52,13 @@ export default function Header() {
             />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="ms-auto text-uppercase">
-                {[ "home", "about", "projects", "contact"].map((item, index) => (
+                {["home", "about", "projects", "contact"].map((item, index) => (
                   <Nav.Item key={index}>
                     <Nav.Link
                       as={Link}
                       href={`#${item}`}
                       className={activeItem === item ? "active" : ""}
-                      onClick={() => handleItemClick(item)} // عند النقر، يتم تعيين activeItem
+                      onClick={() => handleItemClick(item)} // تعيين activeItem عند النقر
                     >
                       {item.charAt(0).toUpperCase() + item.slice(1)}
                     </Nav.Link>
@@ -70,35 +70,39 @@ export default function Header() {
         </Navbar>
       </div>
 
-      <div className="hero text-light" >
+      <div className="hero text-light">
         <Container>
-          {hero.map((item, index) => (
-            <div className="hero-content" key={index}>
-              <div className="hero-image">
-                <Image
-                  className="rounded-circle shadow d-flex"
-                  src={item.image}
-                  alt={item.name}
-                  width={150}
-                  height={150}
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+          {hero.length > 0 ? (
+            hero.map((item, index) => (
+              <div className="hero-content" key={index}>
+                <div className="hero-image">
+                  <Image
+                    className="rounded-circle shadow d-flex"
+                    src={item.image}
+                    alt={item.name}
+                    width={150}
+                    height={150}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <div className="hero-text">
+                  <h1 className="text-uppercase text-center">
+                    {item.name} <br /> {item.title}
+                  </h1>
+                  <p className="text-center text-uppercase my-4">{item.hint}</p>
+                </div>
+                <div className="hero-button my-4">
+                  <Link href="#contact">
+                    <Button className="text-uppercase fw-bold" variant="primary">
+                      {item.btn}
+                    </Button>
+                  </Link>
+                </div>
               </div>
-              <div className="hero-text">
-                <h1 className="text-uppercase text-center">
-                  {item.name} <br /> {item.title}
-                </h1>
-                <p className="text-center text-uppercase my-4">{item.hint}</p>
-              </div>
-              <div className="hero-button my-4">
-                <Link href="#contact">
-                  <Button className="text-uppercase fw-bold" variant="primary">
-                    {item.btn}
-                  </Button>
-                </Link>
-              </div>
-            </div>
-          ))}
+            ))
+          ) : (
+            <p>Loading...</p> // عرض رسالة تحميل إذا لم يتم تحميل البيانات بعد
+          )}
         </Container>
       </div>
     </section>
