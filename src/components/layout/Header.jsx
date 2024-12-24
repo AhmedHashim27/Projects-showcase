@@ -20,7 +20,7 @@ export default function Header() {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get("/apis/headerData.json");
+      const response = await axios.get("/services/headerData.json");
       // console.log(response.data); // تحقق من البيانات
       setHero(response.data);
     } catch (error) {

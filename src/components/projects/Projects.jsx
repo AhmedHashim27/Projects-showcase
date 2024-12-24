@@ -39,7 +39,7 @@ export default function Projects() {
 
   const fetchProjects = () => {
     axios
-      .get("/apis/projectsData.json")
+      .get("/services/projectsData.json")
       .then(function (response) {
         setProjects(response.data);
       })

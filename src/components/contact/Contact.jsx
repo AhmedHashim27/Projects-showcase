@@ -28,7 +28,7 @@ export default function Contact() {
   // جلب بيانات الاتصال
   const fetchDataContact = () => {
     axios
-      .get("/apis/contactData.json")
+      .get("/services/contactData.json")
       .then(function (response) {
         // console.log(response.data);
         setContact(response.data);

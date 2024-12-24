@@ -53,7 +53,7 @@ export default function About() {
 
   const fetchProjects = () => {
     axios
-      .get("/apis/aboutData.json")
+      .get("/services/aboutData.json")
       .then(function (response) {
         setAbout(response.data);
       })
