@@ -1,7 +1,5 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  parser: "babel-eslint",
-  extends: ["eslint:recommended", "plugin:react/recommended"],
   images: {
     remotePatterns: [
       {
@@ -16,10 +14,6 @@ const nextConfig = {
       },
     ],
     dangerouslyAllowSVG: true, // تمكين تحميل صور SVG
-  },
-  webpack: (config, { isServer }) => {
-    // تخصيص إعدادات Webpack هنا إذا لزم الأمر
-    return config;
   },
 };
 
