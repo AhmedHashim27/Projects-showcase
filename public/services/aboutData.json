@@ -45,6 +45,16 @@
                 "id": 8,
                 "name": "nextjs",
                 "image": "/images/skills/next.png"
+            },
+            {
+                "id": 9,
+                "name": "typescript",
+                "image": "/images/skills/typescript.png"
+            },
+            {
+                "id": 10,
+                "name": "tailwind css",
+                "image": "/images/skills/tailwindcss.png"
             }
         ]
     }

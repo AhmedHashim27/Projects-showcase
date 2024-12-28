@@ -87,7 +87,7 @@ export default function Contact() {
       .then(
         (result) => {
           console.log("SUCCESS:", result.text);
-          setStatus("text-center text-success'>Message sent successfully!");
+          setStatus("Message sent successfully!");
           
           // إفراغ الحقول بعد النجاح
           setFormData({
@@ -99,7 +99,7 @@ export default function Contact() {
         },
         (error) => {
           console.log("FAILED:", error.text);
-          setStatus("<p className='text-center text-danger'>Failed to send message.</p>");
+          setStatus("Failed to send message");
         }
       );
   };
@@ -189,8 +189,8 @@ export default function Contact() {
                   </Button>
                 </Form.Group>
               </Form>
-              {status && <div className="text-center mt-3 bg-success pt-3 pb-1 rounded" dangerouslySetInnerHTML={{ __html: status }} />}
-              {error && <p className="text-center  mt-3 bg-danger pt-3 pb-3 rounded">{error}</p>}
+              {status && <div className="text-center mt-3 bg-success pt-3 pb-3 rounded text-capitalize" dangerouslySetInnerHTML={{ __html: status }} />}
+              {error && <p className="text-center  mt-3 bg-danger pt-3 pb-3 rounded text-capitalize">{error}</p>}
             </Col>
           </Row>
         </Container>
