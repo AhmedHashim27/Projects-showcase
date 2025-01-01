@@ -161,5 +161,14 @@
     "category": "framework",
     "github": "https://github.com/ahmedabdellatifhosny/portfolio-v2",
     "vercel": "https://devahmed.vercel.app/"
+  },
+  {
+    "id": 19,
+    "name": "Ekhdmny",
+    "type": "jobs website",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735740559/Capture_pjzxbj.png",
+    "category": "framework",
+    "github": "https://github.com/ahmedabdellatifhosny/portfolio-v2",
+    "vercel": "https://ekhdmny.vercel.app/"
   }
 ]
