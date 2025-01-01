@@ -55,6 +55,11 @@
                 "id": 10,
                 "name": "tailwind css",
                 "image": "/images/skills/tailwindcss.png"
+            },
+            {
+                "id": 11,
+                "name": "responsive design",
+                "image": "/images/skills/responsive.png"
             }
         ]
     }

@@ -21,7 +21,6 @@ export default function Contact() {
   const [error, setError] = useState("");
   const form = useRef(null);
 
-  // تهيئة AOS
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -35,7 +34,6 @@ export default function Contact() {
     };
   }, []);
 
-  // جلب بيانات الاتصال
   const fetchDataContact = () => {
     axios
       .get("/services/contactData.json")
@@ -47,7 +45,6 @@ export default function Contact() {
       });
   };
 
-  // جلب البيانات مرة واحدة عند تحميل الصفحة
   useEffect(() => {
     fetchDataContact();
 
@@ -58,37 +55,39 @@ export default function Contact() {
     return () => clearInterval(intervalId);
   }, []);
 
-  // استخدام AOS بعد تحميل البيانات
   useEffect(() => {
     AOS.refresh();
   }, [contact]);
 
-  // دالة لإرسال النموذج عبر EmailJS
   const handleSendForm = (e) => {
     e.preventDefault();
 
-    // التحقق من أن جميع الحقول مليئة
-    if (!formData.fullName || !formData.email || !formData.subject || !formData.message) {
+    if (
+      !formData.fullName ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
       setError("All fields are required!");
-      setStatus(""); // إخفاء حالة النجاح أو الفشل السابقة
+      setStatus("");
       return;
     }
 
-    setError(""); // إعادة تعيين حالة الخطأ إذا كانت جميع الحقول ممتلئة
+    setError("");
 
     // إرسال البيانات عبر EmailJS
     emailjs
       .sendForm(
         "service_78adzpn",
         "template_nqvusdg",
-        form.current, // استخدام الـ ref بشكل صحيح
+        form.current,
         "LbD7z8RG1xdqwfwAK"
       )
       .then(
         (result) => {
           console.log("SUCCESS:", result.text);
           setStatus("Message sent successfully!");
-          
+
           // إفراغ الحقول بعد النجاح
           setFormData({
             fullName: "",
@@ -189,8 +188,17 @@ export default function Contact() {
                   </Button>
                 </Form.Group>
               </Form>
-              {status && <div className="text-center mt-3 bg-success pt-3 pb-3 rounded text-capitalize" dangerouslySetInnerHTML={{ __html: status }} />}
-              {error && <p className="text-center  mt-3 bg-danger pt-3 pb-3 rounded text-capitalize">{error}</p>}
+              {status && (
+                <div
+                  className="text-center mt-3 bg-success pt-3 pb-3 rounded text-capitalize"
+                  dangerouslySetInnerHTML={{ __html: status }}
+                />
+              )}
+              {error && (
+                <p className="text-center  mt-3 bg-danger pt-3 pb-3 rounded text-capitalize">
+                  {error}
+                </p>
+              )}
             </Col>
           </Row>
         </Container>
