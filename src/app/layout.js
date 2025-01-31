@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "Dev Ahmed - Portfolio",
-  description: "Portfolio of Dev Ahmed - frontend developer ",
+  description: "Portfolio of Dev Ahmed ",
   icons: {
     icon: "/images/header/hero-avatar.jpg",
   },

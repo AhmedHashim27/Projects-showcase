@@ -78,10 +78,10 @@ export default function Contact() {
     // إرسال البيانات عبر EmailJS
     emailjs
       .sendForm(
-        "service_78adzpn",
-        "template_nqvusdg",
+        "service_pcdfv4fg",
+        "template_3dcrcwi",
         form.current,
-        "LbD7z8RG1xdqwfwAK"
+        "Q4A3oTNl-Qjpl4Pae"
       )
       .then(
         (result) => {
@@ -133,7 +133,7 @@ export default function Contact() {
                       <Form.Label>Full Name</Form.Label>
                       <Form.Control
                         type="text"
-                        placeholder="ahmed abdellatif"
+                        placeholder="ahmed Hashim"
                         name="user_name"
                         value={formData.fullName}
                         onChange={(e) =>
@@ -147,7 +147,7 @@ export default function Contact() {
                       <Form.Label>Email Address</Form.Label>
                       <Form.Control
                         type="email"
-                        placeholder="ahmedabdellatifhosny@gmail.com"
+                        placeholder="ahashim@vassar.edu"
                         name="user_email"
                         value={formData.email}
                         onChange={(e) =>

@@ -3,8 +3,9 @@
         "id": 1,
         "image": "/images/header/hero-avatar.jpg",
         "title": "About me",
-        "description": " I’m Ahmed Abdellatif, a skilled Frontend Developer with experience since 2019, specializing in building responsive and dynamic web interfaces. Proficient in HTML, CSS, Bootstrap,Sass, JavaScript, React.js, and Next.js, I combine creativity and technical expertise to deliver seamless and engaging user experiences that meet modern web standards.",
+        "description": " I’m Ahmed Hashim, a junior at Vassar College, majoring in Computer Science with a minor in Math. As a first-generation, low-income, Black student, my goal is not only to find my place in the tech industry but also to represent and advocate for marginalized communities. I am passionate about the intersection of finance and technology and have a deep love for graphic design, especially 3D animations and models. I am striving to add my unique touch to the world by aligning my interests with today's technology to enhance the animations bringing my creative visions to life for the world to see and hear!",
         "btn": "get in touch",
+        "exp" : "Compaines that I've interned at",
         "skills": [
             {
                 "id": 1,
@@ -57,10 +58,116 @@
                 "image": "/images/skills/tailwindcss.png"
             },
             {
+                "id": 12,
+                "name": "MongoDB",
+                "image": "/images/skills/mongodb.png"
+            },
+            {
+                "id": 13,
+                "name": "Node.js",
+                "image": "/images/skills/nodejs.png"
+            },
+            {
+                "id": 15,
+                "name": "Redux",
+                "image": "/images/skills/redux.png"
+            },
+            {
+                "id": 17,
+                "name": "Three.js",
+                "image": "/images/skills/threejs.svg"
+            },
+            {
+                "id": 18,
+                "name": "TypeScript",
+                "image": "/images/skills/typescript.png"
+            },
+            {
+                "id": 19,
+                "name": "MATLAB",
+                "image": "/images/skills/MATLABb.png"
+            },
+            {
+                "id": 20,
+                "name": "Blender",
+                "image": "/images/skills/Blender.png"
+            },
+            {
+                "id": 21,
+                "name": "Arduino",
+                "image": "/images/skills/arduino.png"
+            },
+            {
+                "id": 22,
+                "name": "REST API",
+                "image": "/images/skills/RestAPI.png"
+            },
+            {
+                "id": 23,
+                "name": "Android",
+                "image": "/images/skills/Android.png"
+            },
+            {
+                "id": 24,
+                "name": "Kotlin",
+                "image": "/images/skills/Kotlin.png"
+            },
+            {
+                "id": 25,
+                "name": "C",
+                "image": "/images/skills/c.png"
+            },
+            {
+                "id": 28,
+                "name": "OCaml",
+                "image": "/images/skills/OCaml.png"
+            },
+            {
+                "id": 29,
+                "name": "Java",
+                "image": "/images/skills/java.png"
+            },
+            {
+                "id": 30,
+                "name": "Python",
+                "image": "/images/skills/python.png"
+            },
+            {
+                "id": 31,
+                "name": "Assembly",
+                "image": "/images/skills/Assembly.png"
+            },
+            {
+                "id": 33,
+                "name": "LaTeX",
+                "image": "/images/skills/LaTeX.png"
+            },
+            {
+                "id": 35,
+                "name": "Flask",
+                "image": "/images/skills/Flask.png"
+            },
+            {
+                "id": 36,
+                "name": "SQL Server",
+                "image": "/images/skills/sql_server.png"
+            },
+            {
+                "id": 37,
+                "name": "Firebase",
+                "image": "/images/skills/Firebase.png"
+            },
+            {
+                "id": 39,
+                "name": "MySQL",
+                "image": "/images/skills/mysql_lang.png"
+            },
+            {
                 "id": 11,
                 "name": "responsive design",
                 "image": "/images/skills/responsive.png"
             }
+            
         ]
     }
 ]

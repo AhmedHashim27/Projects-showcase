@@ -68,7 +68,7 @@ export default function Projects() {
       <Container>
         <div className="navigation text-uppercase mb-5">
           <ul className="list-unstyled d-flex gap-3">
-            {["all", "native", "framework"].map((item, index) => (
+            {["all", "native", "framework", "Games & Andriod", "MERN Stack", "Web Design (Figma & Webflow)" ].map((item, index) => (
               <li
                 key={index}
                 className={activeItem === item ? "active" : ""}

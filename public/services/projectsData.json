@@ -1,85 +1,259 @@
 [
   {
+    "id": 1000,
+    "name": "Detriot website",
+    "type": "AI Case study ",
+    "image": "/images/projects/shark/det.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27?tab=repositories",
+    "vercel": "https://detroit.ahmed-hashim.io/"
+  },
+  {
     "id": 1,
+    "name": "Doctor Appointment App",
+    "type": "Healthcare Booking Platform",
+    "image": "/images/projects/shark/1.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://www.figma.com/design/GkjNKLNtY7lyIQn64032vx/Ahmed---Appointment-App?node-id=0-1&p=f&t=fJIofRLy13smJOMl-0"
+  },
+
+  {
+    "id": 60,
+    "name": "Mock Interviewer",
+    "type": "AI-Powered Interview Prep",
+    "image": "/images/projects/shark/mern/60.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://mock-interviewer.vercel.app/"
+  },
+  {
+    "id": 70,
+    "name": "SpotifyAI",
+    "type": "AI Music Suggestions & Live Chat",
+    "image": "/images/projects/shark/mern/70.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://spotify-ai.vercel.app/"
+  },
+  {
+    "id": 21,
+    "name": "Digitize Education",
+    "type": "E-Learning & Online Education",
+    "image": "/images/projects/shark/21.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://digitization-in-education.webflow.io/"
+  },
+  {
+    "id": 80,
+    "name": "Recipe Recommender",
+    "type": "Personalized Cooking Suggestions",
+    "image": "/images/projects/shark/mern/80.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://recipe-recommender.vercel.app/"
+  },
+  {
+    "id": 6,
+    "name": "Creative Solutions Brand",
+    "type": "Business Branding & Services",
+    "image": "/images/projects/shark/6.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://idesigner-lite-template.webflow.io/"
+  },
+  {
+    "id": 30,
+    "name": "Donor App",
+    "type": "Charity & Donations Platform",
+    "image": "/images/projects/shark/2.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://www.figma.com/design/s9N1fs8XqRUU6mpJIGc4vQ/Kun-awnan?node-id=0-1&p=f&t=s3skI4AMINnD8Z0Q-0"
+  },
+  {
+    "id": 2,
+    "name": "Spending Tracker",
+    "type": "Finance Management",
+    "image": "/images/projects/shark/mern/30.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://spending-tracker.vercel.app/"
+  },
+  {
+    "id": 3,
+    "name": "Jewelry Store",
+    "type": "E-Commerce Web Store",
+    "image": "/images/projects/shark/3.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://sprring-free.webflow.io/"
+  },
+  {
+    "id": 5,
+    "name": "Real Estate Website",
+    "type": "Property Listings & Sales",
+    "image": "/images/projects/shark/5.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://homeifye-free.webflow.io/"
+  },
+  {
+    "id": 190,
+    "name": "Netflix",
+    "type": " Movie suggetions",
+    "image": "/images/projects/shark/mern/Netflix.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27/NetFlixClone",
+    "vercel": "https://netflixclone-v8y4.onrender.com/"
+  },
+  {
+    "id": 113,
+    "name": "meamar degla",
+    "type": "Real estate",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050230/5-meamar_kjvsnu.png",
+    "category": "framework",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://meamaardegla.vercel.app/"
+  },
+
+  {
+    "id": 19,
+    "name": "Pathfinder",
+    "type": "jobs website",
+    "image": "/images/projects/shark/path.png",
+    "category": "Games & Andriod",
+    "github": "https://github.com/AhmedHashim27/Pathfinder",
+    "vercel": "https://pathfinder.ahmed-hashim.io/"
+  },
+  {
+    "id": 4,
+    "name": "Learning Feeds Website",
+    "type": "Educational Resource Hub",
+    "image": "/images/projects/shark/7.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://iftech-template.webflow.io/"
+  },
+
+
+  {
+    "id": 7,
+    "name": "Podcast Website",
+    "type": "Audio Streaming & Podcasts",
+    "image": "/images/projects/shark/11.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://castify-free.webflow.io/"
+  },
+
+  
+  {
+    "id": 22,
+    "name": "Investment Team Agency",
+    "type": "Business & Investment Portfolio",
+    "image": "/images/projects/shark/22.png",
+    "category": "Web Design (Figma & Webflow)",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://crestfund.webflow.io/"
+  },
+  {
+    "id": 40,
+    "name": "E-Commerce App",
+    "type": "Online Store",
+    "image": "/images/projects/shark/mern/40.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://ecommerce-app.vercel.app/"
+  },
+
+
+
+  {
+    "id": 112,
+    "name": "pa store",
+    "type": "book store",
+    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050250/14-pastore_nfl2wt.png",
+    "category": "framework",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://pa-store-book.vercel.app/"
+  },
+
+
+  {
+    "id": 8,
     "name": "styler store",
     "type": "e-commerce",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050252/17-styler_khubft.png",
     "technology": "react nextjs",
     "category": "framework",
-    "github": "https://github.com/ahmedabdellatifhosny/styler",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://stylerstore.vercel.app/"
   },
+
   {
-    "id": 2,
+    "id": 9,
     "name": "flutter developer",
     "type": "portfolio",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050235/8-portfolio_ioclxn.png",
     "category": "framework",
-    "github": "https://github.com/ahmedabdellatifhosny/karimportfolio",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://karimportfolio.vercel.app/"
   },
   {
-    "id": 3,
+    "id": 111,
     "name": "pa tech",
     "type": "e-commerce",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050246/15-patech_tjrbqw.png",
     "category": "framework",
-    "github": "https://github.com/ahmedabdellatifhosny/pa-tech",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://patech.vercel.app/"
   },
   {
-    "id": 4,
-    "name": "pa store",
-    "type": "book store",
-    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050250/14-pastore_nfl2wt.png",
-    "category": "framework",
-    "github": "https://github.com/ahmedabdellatifhosny/pa-store",
-    "vercel": "https://pa-store-book.vercel.app/"
-  },
-  {
-    "id": 5,
-    "name": "meamar degla",
-    "type": "Real estate",
-    "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050230/5-meamar_kjvsnu.png",
-    "category": "framework",
-    "github": "https://github.com/ahmedabdellatifhosny/meamar",
-    "vercel": "https://meamaardegla.vercel.app/"
-  },
-  {
-    "id": 6,
+    "id": 114,
     "name": "develogs",
     "type": "software house",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050231/2-develogs_vtnvap.png",
     "category": "framework",
-    "github": "https://github.com/ahmeddev01/styler-store",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://develogs.vercel.app/"
   },
   {
-    "id": 7,
+    "id": 115,
     "name": "pms",
     "type": "products management system",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050235/7-pms_drp4gz.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/pms",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://pms-self.vercel.app/"
   },
   {
-    "id": 8,
+    "id": 116,
     "name": "shaly store",
     "type": "e-commerce",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050230/10-shaly_syodhl.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/shaly",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://shaly-store.vercel.app/"
   },
   {
-    "id": 9,
+    "id": 117,
     "name": "shaly store dashboard",
     "type": "e-commerce dashboard",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050228/1-dashboard_lgjlja.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/shaly/tree/main/dashboard",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://shaly-store.vercel.app/dashboard/index.html"
+  },
+  {
+    "id": 50,
+    "name": "Chat API",
+    "type": "Real-time Messaging API",
+    "image": "/images/projects/shark/mern/50.png",
+    "category": "MERN Stack",
+    "github": "https://github.com/AhmedHashim27",
+    "vercel": "https://chat-api.vercel.app/"
   },
   {
     "id": 10,
@@ -87,7 +261,7 @@
     "type": "landing page",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050228/4-hoochat_d8488v.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/hoochat",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://hoochat.vercel.app/"
   },
   {
@@ -96,8 +270,17 @@
     "type": "party children",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050248/6-nice-day_hzs1sn.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/niceday",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://nicedayparty.vercel.app/"
+  },
+  {
+    "id": 192,
+    "name": "OutGen",
+    "type": "Outfit Genarator",
+    "image": "/images/projects/shark/outfit.png",
+    "category": "Games & Andriod",
+    "github": "https://github.com/AhmedHashim27/OutGen",
+    "vercel": "https://github.com/AhmedHashim27/OutGen"
   },
   {
     "id": 12,
@@ -105,7 +288,7 @@
     "type": "marketing",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050235/11-smart-avenue_xwudc3.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/smart-avenue",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://smart-avenue.vercel.app/"
   },
   {
@@ -114,7 +297,7 @@
     "type": "gem",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050238/12-wfitness_k2xwtz.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/Wfitness",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://wfitness.vercel.app/"
   },
   {
@@ -123,7 +306,7 @@
     "type": "portfolio",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050240/13-portfoliov1_y5ugzd.png",
     "category": "native",
-    "github": "https://github.com/ahmeddev01/styler-store",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://ahmedabdellatif.vercel.app/"
   },
   {
@@ -132,7 +315,7 @@
     "type": "Legal consultations",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050245/3-elmskny_we414d.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/elmskny",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://elmskny.vercel.app/"
   },
   {
@@ -141,7 +324,7 @@
     "type": "License renewal",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050238/9-roukhsa_x86qsu.png",
     "category": "native",
-    "github": "https://github.com/ahmedabdellatifhosny/rokhsa",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://rokhsa.vercel.app/"
   },
   {
@@ -150,7 +333,7 @@
     "type": "License renewal",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050260/16-taptravel_hvmnpb.png",
     "category": "framework",
-    "github": "https://github.com/ahmeddev01/styler-store",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://styler-store.vercel.app/"
   },
   {
@@ -159,16 +342,16 @@
     "type": "License renewal",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735050249/test_aztpzl.png",
     "category": "framework",
-    "github": "https://github.com/ahmedabdellatifhosny/portfolio-v2",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://devahmed.vercel.app/"
   },
   {
-    "id": 19,
+    "id": 191,
     "name": "Ekhdmny",
     "type": "jobs website",
     "image": "https://res.cloudinary.com/dipriw6lb/image/upload/v1735740559/Capture_pjzxbj.png",
     "category": "framework",
-    "github": "https://github.com/ahmedabdellatifhosny/portfolio-v2",
+    "github": "https://github.com/AhmedHashim27",
     "vercel": "https://ekhdmny.vercel.app/"
   }
 ]

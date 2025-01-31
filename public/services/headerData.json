@@ -2,9 +2,9 @@
     {
         "id": 1,
         "image" : "/images/header/hero-avatar.jpg",
-        "name": "Professional",
-        "title": "Frontend Developer",
-        "hint": "  Hi, I’m Ahmed, a creative Frontend Developer passionate about crafting intuitive and engaging user interfaces.",
+        "name": "Hi, I'm Ahmed ",
+        "title": "I love Problem Solving & UX Design",
+        "hint": " console.log('Full-Stack Software Engineer');",
         "btn": "get in touch"
     }
 

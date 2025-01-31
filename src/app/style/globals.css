@@ -1,6 +1,8 @@
 @charset "UTF-8";
+@import "bootstrap/dist/css/bootstrap.min.css"; /* Corrected import */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-body,
+
+/* Rest of your CSS */body,
 html {
   scroll-behavior: smooth;
 }
@@ -2210,6 +2212,55 @@ a {
 .fixed-navbar .fa-gem {
   width: 20px !important;
 }
+
+.experience {
+  width: 100%;
+  max-width: 1200px; /* Same as About Me */
+  margin: 0 auto; /* Centers it */
+}
+
+.experience-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff; /* Matches About Me title */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.experience-desc {
+  font-size: 1.2rem;
+  color: #ccc; /* Slightly dimmed text */
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 
 .show-fixed-navbar {
   bottom: -20px !important;

@@ -7,32 +7,41 @@ import { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+// 1) Import react-spring
+import { useSpring, animated } from "react-spring";
+
 export default function About() {
   const [about, setAbout] = useState([]);
 
+  // --------------------------------------------------
+  // AOS Initialization
+  // --------------------------------------------------
   useEffect(() => {
     AOS.init({
-      duration: 1000, // مدة التأثير
-      easing: "ease-in-out", // تأثير التحرك
-      once: false, // لا يتم تنفيذ التأثير مرة واحدة فقط
-      offset: 200, // التأثير يبدأ عندما يصل العنصر إلى 200px من أعلى الصفحة
+      duration: 1000,
+      easing: "ease-in-out",
+      once: false,
+      offset: 200,
     });
-
     return () => {
-      AOS.refresh(); // إعادة تحديث التأثيرات عند فك التثبيت
+      AOS.refresh();
     };
   }, []);
 
+  // --------------------------------------------------
+  // Slider settings (react-slick)
+  // --------------------------------------------------
   const settings = {
     dots: false,
     infinite: true,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 1000,
     speed: 1500,
     slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: "ease-in-out",
     arrows: false,
+    draggable: true,
     responsive: [
       {
         breakpoint: 1024,
@@ -51,6 +60,9 @@ export default function About() {
     ],
   };
 
+  // --------------------------------------------------
+  // Fetching data from aboutData.json
+  // --------------------------------------------------
   const fetchProjects = () => {
     axios
       .get("/services/aboutData.json")
@@ -64,18 +76,30 @@ export default function About() {
 
   useEffect(() => {
     fetchProjects();
-
+    // Example: Re-fetch data every 1 second (not recommended in production)
     const intervalId = setInterval(() => {
       fetchProjects();
-    }, 1000); 
-
+    }, 1000);
     return () => clearInterval(intervalId);
   }, []);
 
-  // استدعاء AOS.refresh() عند تحديث البيانات
+  // Re-initialize AOS on data update
   useEffect(() => {
-    AOS.refresh(); // تحديث التأثيرات بعد تحميل البيانات
+    AOS.refresh();
   }, [about]);
+
+  // --------------------------------------------------
+  // 2) Spin animation with react-spring
+  // --------------------------------------------------
+  // If you’d prefer to spin the *entire slider*, you can wrap the Slider with animated.div.
+  // Below, we just spin each skill icon individually.
+
+  const spinProps = useSpring({
+    loop: true,       // repeats forever
+    from: { transform: "rotate(0deg)" },
+    to: { transform: "rotate(360deg)" },
+    config: { duration: 3000 }, // 3 seconds per full rotation
+  });
 
   return (
     <section className="about" id="about" data-aos="fade-in">
@@ -87,23 +111,28 @@ export default function About() {
                 <Image src={item.image} alt={item.title} fill />
               </div>
             </Col>
+
             <Col md={6}>
               <div className="about-info">
                 <h2 className="text-uppercase my-4">{item.title}</h2>
                 <p className="text-uppercase">{item.description}</p>
+
                 <div className="skills text-center my-5">
                   <Slider {...settings}>
                     {item.skills &&
                       item.skills.map((skill, index) => (
                         <div key={index} className="skills-container">
                           <div className="slider-item">
-                            <Image
-                              className="mx-auto mb-3"
-                              src={skill.image}
-                              alt={skill.name}
-                              width={100}
-                              height={100}
-                            />
+                            {/* 3) Wrap the skill icon in an animated.div to apply the spinProps */}
+                            <animated.div style={spinProps}>
+                              <Image
+                                className="mx-auto mb-3"
+                                src={skill.image}
+                                alt={skill.name}
+                                width={100}
+                                height={100}
+                              />
+                            </animated.div>
                           </div>
                           <div className="skill-name text-center">
                             <h6>{skill.name}</h6>
